@@ -42,6 +42,52 @@ public class InputListeningSample implements ApplicationListener, InputProcessor
 //                return true;
 //            }
 //        });
+////        Checking input multiplexer
+//        InputMultiplexer multiplexer = new InputMultiplexer();
+//        InputAdapter firstProcessor = new InputAdapter() {
+//            @Override
+//            public boolean keyDown(int keycode) {
+//                log.debug(" first - keyDown() keycode = " + keycode);
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean keyTyped(char character) {
+//                log.debug(" first - keyTyped() character = " + character);
+//                return false;
+//            }
+//
+//            @Override
+//            public boolean keyUp(int keycode) {
+//                return false;
+//            }
+//        };
+//        InputAdapter secondProcessor = new InputAdapter() {
+//            @Override
+//            public boolean keyDown(int keycode) {
+//                log.debug(" second - keyDown() keycode = " + keycode);
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean keyUp(int keycode) {
+//                log.debug(" second - keyUp() keycode = " + keycode);
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean keyTyped(char character) {
+//                log.debug(" second - keyTyped() character = " + character);
+//                return true;
+//            }
+//        };
+//
+//        // Adding the processors to the multiplexer
+//        multiplexer.addProcessor(firstProcessor);
+//        multiplexer.addProcessor(secondProcessor);
+//
+//        // Setting the input processor
+//        Gdx.input.setInputProcessor(multiplexer);
     }
 
     @Override
